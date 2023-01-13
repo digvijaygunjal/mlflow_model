@@ -3,7 +3,7 @@ experiment:
   artifact_location: "dbfs:/recipe/regression/artifacts"
 
 model_registry:
-  registry_uri: "dbfs:/recipe/regression/registry"
+  registry_uri: "/Users/digvijag@thoughtworks.com/registry/"
   model_name: "taxi_fare_regressor"
 
 SPLIT_RATIOS: [ 0.80, 0.10, 0.10 ]
