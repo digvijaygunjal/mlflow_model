@@ -1,6 +1,5 @@
 experiment:
-  name: "sklearn_regression_experiment"
-#  tracking_uri: "http://localhost:9000"
+  name: "/Users/digvijag@thoughtworks.com/recipe"
   artifact_location: "dbfs:/recipe/regression/artifacts"
 
 model_registry:
