@@ -1,10 +1,10 @@
 experiment:
   name: "sklearn_regression_experiment"
 #  tracking_uri: "http://localhost:9000"
-  artifact_location: "dbfs:/recipe/regression"
+  artifact_location: "dbfs:/recipe/regression/artifacts"
 
 model_registry:
-  registry_uri: "databricks://databricks"
+  registry_uri: "dbfs:/recipe/regression/registry"
   model_name: "taxi_fare_regressor"
 
 SPLIT_RATIOS: [ 0.80, 0.10, 0.10 ]
