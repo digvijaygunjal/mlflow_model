@@ -1,0 +1,22 @@
+experiment:
+  name: "sklearn_regression_experiment"
+#  tracking_uri: "http://localhost:9000"
+  artifact_location: "dbfs:/recipe/regression"
+
+model_registry:
+  registry_uri: "databricks://databricks"
+  model_name: "taxi_fare_regressor"
+
+SPLIT_RATIOS: [ 0.80, 0.10, 0.10 ]
+
+INGEST_CONFIG:
+  using: parquet
+  location: "./data/sample.parquet"
+
+INGEST_SCORING_CONFIG:
+  using: parquet
+  location: "./data/sample.parquet"
+
+PREDICT_OUTPUT_CONFIG:
+  using: parquet
+  location: "./data/sample_output.parquet"
