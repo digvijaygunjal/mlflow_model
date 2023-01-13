@@ -6,7 +6,7 @@ model_registry:
   registry_uri: "/Users/digvijag@thoughtworks.com/registry/"
   model_name: "taxi_fare_regressor"
 
-SPLIT_RATIOS: [ 0.80, 0.10, 0.10 ]
+SPLIT_RATIOS: [ 0.80, 0.11, 0.9 ]
 
 INGEST_CONFIG:
   using: parquet
